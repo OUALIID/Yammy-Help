@@ -1,0 +1,197 @@
+
+.HeaderIntroWrapTitle{
+	position: relative;
+	background-color: rgb(146, 102, 37, 88%);
+	box-shadow: 20px 10px 93px 20px rgba(0, 0, 0, 5);
+	color: #011726;
+	font-family: 'Orelega One';
+	font-weight: lighter;
+	font-size: 35px;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 6px;
+	text-shadow: none;
+	top: -400px;
+	/*animation: TypingAnimation 2s forwards;*/
+}
+
+@keyframes TypingAnimation {
+	from{
+		width: 50%;
+		transform: translateX(40%);
+	}
+	to{
+		width: 100%;
+		transform: translateX(0);
+	}
+}
+
+.MenuSectionBoxes{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: -350px;
+}
+
+.MenuSectionBoxes img{
+	box-shadow: 20px 4px 30px 10px rgba(0, 0, 0, 0.5);
+	width: 200px; /*300*/
+	height: 200px; /*300*/
+	margin: 20px;
+	flex: 0 1 calc(33.33% - 16px);
+	/*Description of the line above:
+	flex-grow: 0; Meaning the images won't grow beyond
+	their original size.
+	flex-shrink: 1; Meaning the items are allowed to
+	shrink if there isn't enough space.
+	flex-basis: calc(33.33% - 16px); This is the initial
+	size of the flex item before the remaining space is
+	distributed.*/
+}
+.MenuSectionBoxes img:hover{
+	background-color: rgb(146, 102, 37, 88%);
+	box-shadow: 0 4px 5px 1px rgba(3, 94, 159, 60%);
+	transition: background-color 0.5 ease;
+	transition: box-shadow 0.3s ease-in-out;
+    transform: scale(1.1);
+	cursor: pointer;
+}
+
+.MenuSectionBoxesWrap{
+	position: absolute;
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    margin-top: 11.86%;
+    background-color: rgb(146, 102, 37, 70%);
+    box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 5);
+    animation: FadeInUp 3s ease-out;
+}
+
+.MenuSectionBoxesWrap:hover{
+	cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.MenuSectionBoxesWrap p{
+	font-family: 'Oregano';
+	font-size: 25px;
+	text-align: center;
+	margin-top: 3px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+	animation: FadeInUp .1s ease;
+}
+
+@keyframes FadeInUp{
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+}
+
+.MenuSectionRecipesWrap{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 5);
+    animation: FadeInUp 3s ease-out;
+}
+
+.MenuSectionRecipeItem p{
+	font-family: 'Oregano';
+	font-size: 25px;
+	text-align: center;
+	margin-top: 8px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+	background-color: rgb(146, 102, 37, 88%);
+	animation: FadeInUp 2s ease;
+}
+
+.MenuSectionRecipeItem {
+    transition: transform 0.3s ease-in-out;
+}
+
+.MenuSectionRecipeItem:hover {
+	cursor: pointer;
+    transform: scale(1.1);
+}
+
+.PopupContainer {
+    display: flex;
+    position: fixed;
+	justify-content: center;
+	align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(1, 23, 38, 0.542);
+	backdrop-filter: blur(10px);
+    z-index: 1000;
+	overflow-y: auto;
+}
+
+.RecipeDetails {
+    position: absolute;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 23, 38, 0.542);
+	backdrop-filter: blur(10px);
+    padding: 60px;
+    width: 82%;
+    height: fit-content;
+	max-height: 90vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.RecipeDetails img{
+	position: relative;
+	display: flex;
+    align-self: flex-end;
+    box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 5);
+	width: 151px;
+    height: 115px;
+    margin-left: 10px;
+	top: -10px;
+}
+
+.RecipeDetails p{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: white;
+	font-family: 'Oregano';
+	font-size: 20px;
+    background-color: rgba(1, 23, 38, 80%);
+    padding: 13px;
+	margin: 8px;
+	box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 5);
+}
+
+.recipeInfo{
+	display: flex;
+    align-self: flex-end;
+	width: 70%;
+	height: fit-content;
+}
+
+.recipeIngredient, .recipeInstructions{
+	width: 100%;
+}
+
+.recipeIngredients{
+	color: white;
+	font-family: 'Oregano';
+	font-size: 20px;
+}
