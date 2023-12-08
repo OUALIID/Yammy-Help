@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/Style/Header.css">
+	<link rel="stylesheet" href="/Style/Home.css">
+	<link rel="stylesheet" href="/Style/Footer.css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Kolker Brush' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Oregano' rel='stylesheet'>
+	<title>YummyHelp</title>
+</head>
+<body>
+	<header class="HeaderWrap">
+		<nav class="HeaderNav">
+			<ul class="HeaderUl">
+				<li class="HeaderBrand"><a href="header.html">YummyHelp</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="header.html">Home</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="#Features">Features</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="#About">About</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="Recipes.html">Recipes</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="header.html">Login</a></li>
+				<li class="HeaderElement"><img alt="HeaderImage" src="/Pictures/HeaderElementCompanion.png"><a href="header.html">Signup</a></li>
+			</ul>
+		</nav>
+		<section class="HeaderIntroSection">
+			<div class="HeaderIntroWrap">
+				<h1 class="HeaderIntroWrapTitle"><a href="header.html">YummyHelp</a></h1>
+				<p class="HeaderIntroWrapText">Your go to place to get cooking recipes personalized based on what you have available.</p>
+			</div>
+		</section>
+		<div class="HeaderIntroSectionButtonGroup">
+			<button class="HeaderIntroSectionButton" onclick="navigateToGithub()">Github</button>
+			<button class="HeaderIntroSectionButton" onclick="navigateToRecipes()">Demo</button>
+		</div>
+		<div class="ScrollButton">
+			<img src="/Pictures/ScrollDownIcon.png">
+		</div>
+	</header>
+
+	<section id="Features" class="FeaturesSection">
+		<div class="FeaturesSectionItem">
+			<svg width="90" height="87" viewBox="0 0 90 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M37.8107 60.5587L20.4546 43.7807L26.24 38.1882L37.8107 49.3736L60.9525 27.0032L66.7379 32.5958L37.8107 60.5587Z" fill="#011726"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 43.5C0 19.4756 20.1472 0 45 0C69.8527 0 90 19.4756 90 43.5C90 67.5243 69.8527 87 45 87C20.1472 87 0 67.5243 0 43.5ZM45 79.0909C24.6659 79.0909 8.18182 63.1565 8.18182 43.5C8.18182 23.8437 24.6659 7.90909 45 7.90909C65.3343 7.90909 81.8182 23.8437 81.8182 43.5C81.8182 63.1565 65.3343 79.0909 45 79.0909Z" fill="#011726"/>
+			</svg>
+			<h2 class="FeaturesSectionItemText">Reliability</h2>
+			<p class="FeaturesSectionItemText">The web site relies on a reliable API to Display detailed information for each recipe.</p>
+		</div>
+		<div class="FeaturesSectionItem">
+			<svg width="86" height="87" viewBox="0 0 86 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M58.637 31.6364C58.637 40.3724 51.6362 47.4546 43.0006 47.4546C34.3649 47.4546 27.3643 40.3724 27.3643 31.6364C27.3643 22.9003 34.3649 15.8182 43.0006 15.8182C51.6362 15.8182 58.637 22.9003 58.637 31.6364ZM50.8188 31.6364C50.8188 36.0046 47.3186 39.5455 43.0006 39.5455C38.6826 39.5455 35.1824 36.0046 35.1824 31.6364C35.1824 27.2683 38.6826 23.7273 43.0006 23.7273C47.3186 23.7273 50.8188 27.2683 50.8188 31.6364Z" fill="#011726"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M43 0C19.2518 0 0 19.4756 0 43.5C0 67.5243 19.2518 87 43 87C66.7481 87 86 67.5243 86 43.5C86 19.4756 66.7481 0 43 0ZM7.81818 43.5C7.81818 51.7658 10.6036 59.3735 15.2766 65.4149C21.705 56.9016 31.8445 51.4091 43.2521 51.4091C54.5115 51.4091 64.536 56.76 70.9754 65.0851C75.4963 59.0979 78.1818 51.6163 78.1818 43.5C78.1818 23.8437 62.4305 7.90909 43 7.90909C23.5696 7.90909 7.81818 23.8437 7.81818 43.5ZM43 79.0909C34.5946 79.0909 26.8775 76.1088 20.8263 71.1336C25.7747 63.9893 33.9741 59.3182 43.2521 59.3182C52.4147 59.3182 60.5256 63.8742 65.4921 70.869C59.3943 76.0028 51.5535 79.0909 43 79.0909Z" fill="#011726"/>
+			</svg>
+			<h2 class="FeaturesSectionItemText">User Friendly</h2>
+			<p class="FeaturesSectionItemText">We created a user friendly design that helps you navigate trough recipes and chose your favorites.</p>
+		</div>
+		<div class="FeaturesSectionItem">
+			<svg width="90" height="85" viewBox="0 0 90 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M45 63.7499C54.941 63.7499 63 56.1386 63 46.7499H27C27 56.1386 35.0589 63.7499 45 63.7499Z" fill="#011726"/>
+				<path d="M36 33.9999C36 36.3472 33.9853 38.2499 31.5 38.2499C29.0147 38.2499 27 36.3472 27 33.9999C27 31.6527 29.0147 29.7499 31.5 29.7499C33.9853 29.7499 36 31.6527 36 33.9999Z" fill="#011726"/>
+				<path d="M58.4995 38.2499C60.9849 38.2499 62.9995 36.3472 62.9995 33.9999C62.9995 31.6527 60.9849 29.7499 58.4995 29.7499C56.0142 29.7499 53.9995 31.6527 53.9995 33.9999C53.9995 36.3472 56.0142 38.2499 58.4995 38.2499Z" fill="#011726"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M90 42.5C90 65.9719 69.8526 85 45 85C20.1472 85 0 65.9719 0 42.5C0 19.0279 20.1472 0 45 0C69.8526 0 90 19.0279 90 42.5ZM81 42.5C81 61.2778 64.8824 76.5 45 76.5C25.1177 76.5 9 61.2778 9 42.5C9 23.7223 25.1177 8.5 45 8.5C64.8824 8.5 81 23.7223 81 42.5Z" fill="#011726"/>
+			</svg>
+			<h2 class="FeaturesSectionItemText">Amazing recipes</h2>
+			<p class="FeaturesSectionItemText">The recipes come from different areas to give you many choices you can chose from, enjoy!</p>
+		</div>
+	</section>
+
+	<section id="About" class="AboutSection">
+		<div class="AboutSectionText">
+			<p>
+				We live by the concept of eating to live and not living to eat. Preparing food and thinking about what to cook is a luxury busy people don’t have.
+				<br>We are here for you, and we will think for you. Select your ingredients and submit to get the best recipes you can cook with what you have available.
+			</p>
+		</div>
+	</section>
+	<div class="Content">
+		<div class="AboutContentText">
+			<p>Use the ingredients you have at home to create amazing plates and beverages fitted for big occasions
+				as well as when it is just you.</p>
+		</div>
+		<div class="AboutContentTitle">
+			<p>ENJOY COOKING AT YOUR PACE</p>
+		</div>
+		<button class="button">
+			<span class="button-content">Test a demo</span>
+		</button>
+		<div class="image-container">
+			<img src="/Pictures/ContentPicture2.png" class="descending-image">
+		</div>
+	</div>
+
+	<footer>
+		<div class="footerContent">
+			<div class="groupFooter">
+				<div class="makerPicture">
+					<img src="/Pictures/PictureMaker1.jpg" class="PictureMaker1">
+					<img src="/Pictures/PictureMaker2.jpg" class="PictureMaker2">
+				</div>
+				<div class="social-icons_oualid">
+					<a href="https://x.com/walid_elhadim" class="icon-twitter_oualid"><i class="fab fa-twitter"></i></a>
+					<a href="https://github.com/OUALIID" class="icon-github_oualid"><i class="fab fa-github"></i></a>
+					<a href="https://www.instagram.com/oualid_elhadim" class="icon-instagram_oualid"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/walid-elhadim-752a04268" class="icon-linkedin_oualid"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:walidelhadim8@gmail.com" class="icon-email_oualid"><i class="fas fa-envelope"></i></a>
+				</div>
+			</div>
+			<div class="square-container">
+				<p>Made with love and an amazing collaboration. This is our final foundation project
+					within ALX. Much appreciation for the ALX community.</p>
+			</div>
+			<div class="social-icons_asmaa">
+				<a href="mailto:asmaehadar32@gmail.com" class="icon-email_asmaa"><i class="fas fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/asmaa-hadar-928b121a3" class="icon-linkedin_asmaa"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.instagram.com/asmaahadar2" class="icon-instagram_asmaa"><i class="fab fa-instagram"></i></a>
+				<a href="https://github.com/H-Asmaa" class="icon-github_asmaa"><i class="fab fa-github"></i></a>
+				<a href="https://x.com/HadarAsmaa" class="icon-twitter_asmaa"><i class="fab fa-twitter"></i></a>
+			</div>
+	  	</div>
+		<div class="copywriting">
+			<p>Copy rights © 2023</p>
+		</div>
+	</footer>
+
+	<script src="/Script/Header.js"></script>
+	<script src="/Script/Home.js"></script>
+</body>
