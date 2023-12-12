@@ -1,21 +1,10 @@
-/*
-document.addEventListener('DOMContentLoaded', function () {
-  const AboutSection = document.querySelector('.AboutSection');
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > 170) {
-      AboutSection.classList.remove('up');
-      AboutSection.classList.add('down');
-    } else {
-      AboutSection.classList.remove('down');
-      AboutSection.classList.add('up');
-    }
-  });
-});
-*/
-
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
+    /**
+     * An event listener on the content image of the Home page.
+     * It unables the image to apear on scroll.
+     */
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
@@ -30,9 +19,17 @@ window.addEventListener("scroll", function () {
 }, false);
 
 function navigateToRecipes() {
+  /**
+   * A function that redirects from the home to the recipes page
+   * when the button is clicked.
+   */
   window.location.href = "Recipes.html";
 }
 
 function navigateToGithub() {
+  /**
+   * A function that redirects from the home to github's repository
+   * when the button is clicked.
+   */
   window.location.href = "https://github.com/";
 }

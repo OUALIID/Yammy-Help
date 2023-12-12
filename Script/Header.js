@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+  /* This is an event listener on the HeaderNav.
+   * It unables the background color when the user scrolls down.
+   */
   const HeaderNav = document.getElementsByClassName('HeaderNav')[0];
   window.addEventListener('scroll', function () {
     if (window.scrollY > 0) {
@@ -10,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  /**
+   * This is an event listener on the scroll button.
+   * It unables vertical scroll when clicked and flips the icon
+   * to unable vertical scroll in the upward direction.
+   */
   const scrollButton = document.querySelector('.ScrollButton');
   window.addEventListener('scroll', function () {
     const scrolled = window.scrollY;
