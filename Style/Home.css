@@ -3,7 +3,7 @@ body{
 	background-color: #ffffff;
 }
 .AboutSection{
-	background-image: url("/Pictures/ContentPicture1.jpg");
+	background-image: url("../Pictures/ContentPicture1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
