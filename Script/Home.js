@@ -31,5 +31,5 @@ function navigateToGithub() {
    * A function that redirects from the home to github's repository
    * when the button is clicked.
    */
-  window.location.href = "https://github.com/";
+  window.location.href = "https://github.com/OUALIID/Yammy-Help";
 }

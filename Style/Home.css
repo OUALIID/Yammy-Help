@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nico+Moji&display=swap');
 
 body{
 	background-color: #ffffff;
+    overflow-x: hidden;
 }
 .AboutSection{
 	background-image: url("../Pictures/ContentPicture1.jpg");
@@ -33,10 +37,6 @@ body{
 	text-shadow: 2px 2px 4px rgba(0, 166, 255, 100%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nico+Moji&display=swap');
-body
 .AboutContentText p {
     font-family: 'Oregano';
     font-size: 41px;
@@ -46,9 +46,6 @@ body
     color: #517912;
     position: relative;
     top: 11px;
-}
-body {
-    overflow-x: hidden;
 }
 .AboutContentTitle p {
     font-family: 'Orelega One';
@@ -126,7 +123,14 @@ body {
 }
 
 .appear {
-    transform: translateX(-120%); /* Move the image from right to left */
+    transform: translateX(-120%);
+}
+
+@media only screen and (max-width: 1991px) {
+
+    .image-container{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -147,12 +151,6 @@ body {
     align-items: center;
     justify-content: space-around;
 	height: 100vh;
-	/*
-	width: 80%;
-    height: fit-content;
-    margin: auto;
-    margin-bottom: 4%;
-	*/
 }
 
 .FeaturesSectionItem{
@@ -202,9 +200,25 @@ body {
 	border-color: rgba(0, 26, 45, 0.931);
 }
 
-/*
-* Responsivity
-*/
+@media screen and (max-width: 829px) {
+    .FeaturesSection{
+        display: block;
+        padding: 20px;
+        height: fit-content;
+    }
+    .FeaturesSectionItem{
+        width: 60%;
+        height: fit-content;
+        margin-left: 20%;
+    }
+    .FeaturesSectionItem h2{
+        padding: 2%;
+    }
+    .FeaturesSectionItemText{
+        padding: 2%;
+    }
+}
+
 @media (max-width: 1300px){
 	.AboutSectionText p{
 		font-size: 1.5em;
