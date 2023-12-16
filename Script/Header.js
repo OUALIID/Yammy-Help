@@ -38,3 +38,49 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+  const HeaderHamburgerIcon = document.querySelector('.HeaderHamburgerIcon');
+  const HeaderUl = document.querySelector('.HeaderUl');
+
+  HeaderHamburgerIcon.addEventListener('click', function(){
+    HeaderUl.classList.toggle("active");
+  });
+
+  // Close the mobile menu when a menu item is clicked
+  const HeaderElements = document.querySelectorAll('.HeaderElement');
+  HeaderElements.forEach(function(element) {
+    element.addEventListener('click', function(){
+      HeaderUl.classList.remove('active');
+    });
+  });
+});
+
+
+/*
+document.addEventListener("DOMContentLoaded", function(){
+  /**
+   * This is an event listener that unables the Header nav
+   * to display when the HeaderHamburgerIcon is clicked on smaller
+   * screen sizes.
+   *//*
+  const HeaderHamburgerIcon = document.querySelector('.HeaderHamburger');
+  const HeaderUl = document.querySelector('.HeaderUl');
+  const HeaderNav = document.querySelector('.HeaderNav');
+  let HeaderUlOpen = false;
+  HeaderHamburgerIcon.addEventListener('click', function(){
+    if(HeaderUlOpen === false){
+      HeaderUl.style.display = 'block';
+      HeaderUl.style.position = 'relative';
+      HeaderUl.style.top = '20px';
+      HeaderNav.style.backgroundColor = 'rgba(0, 26, 45, 0.931)';
+      HeaderNav.style.transition =  'background-color ease 0.2s';
+      HeaderUlOpen = true;
+    }else{
+      HeaderUl.style.display = 'none';
+      HeaderNav.style.backgroundColor = 'transparent';
+      HeaderNav.style.transition =  'background-color ease 0.2s';
+      HeaderUlOpen = false;
+    }
+  });
+});*/
